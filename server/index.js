@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(
     cors({
-        origin: [process.env.FE_url] ,
+        origin: [process.env.FE_url,"https://jan-cohort1-fe.vercel.app/"] ,
         credentials: true,
         methods: ["GET","POST","PUT","DELETE"]
     })
